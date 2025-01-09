@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>開發日誌紀錄軟體</string>
+  </property>
+  <widget class="QListWidget" name="logListWidget">
+   <property name="layout" stdset="0">
+    <string>verticalLayout</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="topLayout">
+          <item>
+           <widget class="QLineEdit" name="searchLineEdit">
+            <property name="placeholderText">
+             <string>搜索日誌...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchButton">
+            <property name="text">
+             <string>搜索</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QComboBox" name="YYComboBox">
+            <item>
+             <property name="text">
+              <string>2024</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2025</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2026</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2027</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2028</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2029</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2030</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="MMComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <item>
+             <property name="text">
+              <string>1月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>3月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>5月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>6月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>7月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>9月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>10月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>11月</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>12月</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="calendarButton">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>顯示月曆</string>
+            </property>
+            <property name="text">
+             <string>月曆</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="logListWidget_2"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="addImageButton">
+            <property name="text">
+             <string>新增圖片</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="saveLogButton">
+            <property name="text">
+             <string>儲存</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="logTextEdit">
+          <property name="placeholderText">
+           <string>輸入或查看日誌內容...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="imageLabel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>圖片預覽</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
